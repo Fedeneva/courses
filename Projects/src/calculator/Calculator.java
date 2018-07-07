@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     static Scanner sc;
 
-    public static void main(String[] args) {
+    public void start() {
         sc = new Scanner(System.in);
         float num1;
         float num2;
@@ -20,7 +20,7 @@ public class Calculator {
                 "\nResult: %.4f", calculate(num1, num2));
     }
 
-    private static float calculate(float num1, float num2) {
+    private float calculate(float num1, float num2) {
         System.out.print("Input the operation:\t\t");
         String operation = sc.next();
 
