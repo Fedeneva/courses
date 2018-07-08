@@ -5,6 +5,24 @@ import java.util.Random;
 
 public class MainClass {
     public static void main(String[] args) {
+        //randomMinMax();
+        prepareGift();
+    }
+
+    private static void prepareGift() {
+        Gift gift = new Gift();
+        gift.addSweetness(new Sweetness("candy1", 2, 20, "1"));
+        gift.addSweetness(new Sweetness("candy2", 4, 30, "2"));
+        gift.addSweetness(new Sweetness("candy3", 2, 25, "3"));
+        gift.addSweetness(new Sweetness("candy4", 7, 10, "4"));
+        gift.addSweetness(new Sweetness("candy5", 3, 35, "5"));
+
+        System.out.println("Gift weight: " + gift.getWeight());
+        System.out.println("Gift cost: " + gift.getCost());
+        gift.printInfo();
+    }
+
+    private static void randomMinMax() {
         final int NUMBER_AMOUNT = 20;
         int numbers[] = new int[NUMBER_AMOUNT];
         int indexOfMaxNegative = -1;
