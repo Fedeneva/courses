@@ -1,16 +1,14 @@
 package Lesson4;
 
-public class Sweetness {
-    private String name;
-    private double weight;
-    private int cost;
-    private String unique;
+public abstract class Sweetness {
+    protected String name;
+    protected double weight;
+    protected int cost;
 
-    public Sweetness(String name, double weight, int cost, String unique) {
+    public Sweetness(String name, double weight, int cost) {
         this.name = name;
         this.weight = weight;
         this.cost = cost;
-        this.unique = unique;
     }
 
     public double getWeight() {
@@ -24,7 +22,6 @@ public class Sweetness {
     public String getInfo() {
         return  "Name:\t" + name +
                 "\nWeight:\t" + weight +
-                "\nCost:\t" + cost +
-                "\nUnique:\t" + unique;
+                "\nCost:\t" + cost;
     }
 }

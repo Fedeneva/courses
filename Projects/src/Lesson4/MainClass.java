@@ -11,11 +11,10 @@ public class MainClass {
 
     private static void prepareGift() {
         Gift gift = new Gift();
-        gift.addSweetness(new Sweetness("candy1", 2, 20, "1"));
-        gift.addSweetness(new Sweetness("candy2", 4, 30, "2"));
-        gift.addSweetness(new Sweetness("candy3", 2, 25, "3"));
-        gift.addSweetness(new Sweetness("candy4", 7, 10, "4"));
-        gift.addSweetness(new Sweetness("candy5", 3, 35, "5"));
+        gift.addSweetness(new Candy("Juika", 2, 20, "pink"));
+        gift.addSweetness(new Chocolate("AlpenGooo", 4, 30, "strawberry"));
+        gift.addSweetness(new Candy("Lemonka", 2, 25, "yellow"));
+        gift.addSweetness(new Chocolate("Mylko", 7, 10, "nut"));
 
         System.out.println("Gift weight: " + gift.getWeight());
         System.out.println("Gift cost: " + gift.getCost());
